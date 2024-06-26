@@ -34,5 +34,6 @@ router.route('/').get(async (request, response) => {
             .json({ message: 'Failed to fetch records', error })
     }
 });
-
+var someVar = 'Testing if this works'
+console.log(someVar);
 module.exports = router
