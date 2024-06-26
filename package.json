@@ -33,6 +33,6 @@
   },
   "lint-staged": {
     "**/*.js": "eslint",
-    "**/*.{js}": "prettier"
+    "**/*.{js,css, html}": "prettier"
   }
 }
