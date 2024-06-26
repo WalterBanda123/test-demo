@@ -7,6 +7,7 @@
     "start": "node app.js",
     "lint-staged": "lint-staged",
     "prepare": "husky install"
+    
   },
   "author": "",
   "license": "ISC",
@@ -32,7 +33,6 @@
     "supertest": "^7.0.0"
   },
   "lint-staged": {
-    "**/*.js": "eslint",
-    "**/*.{js,css, html}": "prettier"
+    "**/*.js": ["prettier" , "eslint"]
   }
 }
