@@ -9,4 +9,4 @@ const BookSchema = new mongoose.Schema({
     pages: { type: Number, require: true },
 });
 
-module.exports = mongoose.model('_Book', BookSchema);
+module.exports = mongoose.model('Book', BookSchema);

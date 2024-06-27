@@ -24,10 +24,9 @@ const server = app.listen(3000, () => {
         }
     }).catch(error => {
         console.log(error);
-    }).finally(() => console.log("Let's Go"))
+    }).finally(() => {
+        console.log("Let's complete here");
+    })
 })
-
-
-
 
 module.exports = server

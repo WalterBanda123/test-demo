@@ -20,6 +20,7 @@ router.route('/').post(async (request, response) => {
             .json({ message: 'Created a book record', book: dbResponse })
 
     } catch (error) {
+        console.log(error);
         response.status(StatusCodes.CONFLICT)
             .json({ message: 'Failed to create record', error })
     }
