@@ -11,7 +11,7 @@ afterAll((done) => {
 
 describe('POST /api/version-03/books', function () {
     it(' creates a book record', async function () {
-        const dummyData = {  title: "book-02", description: "book-02", pages: 0 }
+        const dummyData = {  title: "book-03", description: "book-03", pages: 0 }
         const response = await supertest(app).post('/api/version-03/books')
             .send(dummyData)
         expect(response.statusCode).toEqual(StatusCodes.CREATED);
