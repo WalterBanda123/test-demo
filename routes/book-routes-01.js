@@ -15,7 +15,7 @@ router.route('/').post(async (request, response) => {
             description,
             pages
         });
-        dbResponse.save
+        dbResponse.save()
         response.status(StatusCodes.CREATED)
             .json({ message: 'Created a book record', book: dbResponse })
 
@@ -34,6 +34,5 @@ router.route('/').get(async (request, response) => {
             .json({ message: 'Failed to fetch records', error })
     }
 });
-var someVar = 'Testing if this works'
-console.log(someVar);
+
 module.exports = router
